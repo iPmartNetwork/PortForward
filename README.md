@@ -20,7 +20,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/iPmartNetwork/PortForward/main
 
 
 ```
-./PortForward.sh
+bash PortForward.sh
 ```
 
 
