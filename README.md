@@ -16,14 +16,6 @@
 bash <(curl -Ls https://raw.githubusercontent.com/iPmartNetwork/PortForward/main/PortForward.sh)
 ```
 
-## اجرای مجدد
-
-
-```
-bash PortForward.sh
-```
-
-
 
 # تلگرام
 
