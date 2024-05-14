@@ -39,10 +39,10 @@ case $OPTION in
 1)
 	echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
 	sysctl -p
-	iptables -t nat -I PREROUTING -p tcp --dport 1373 -j DNAT --to-destination "$thisServerIP"
-	iptables -t nat -I PREROUTING -p udp --dport 1373 -j DNAT --to-destination "$thisServerIP"
-	iptables -t nat -I PREROUTING -p tcp --dport 1373 -j DNAT --to-destination "$thisServerIP"
-	iptables -t nat -I PREROUTING -p udp --dport 1373 -j DNAT --to-destination "$thisServerIP"
+	iptables -t nat -I PREROUTING -p tcp --dport 810 -j DNAT --to-destination "$thisServerIP"
+	iptables -t nat -I PREROUTING -p udp --dport 810 -j DNAT --to-destination "$thisServerIP"
+	iptables -t nat -I PREROUTING -p tcp --dport 4143 -j DNAT --to-destination "$thisServerIP"
+	iptables -t nat -I PREROUTING -p udp --dport 4143 -j DNAT --to-destination "$thisServerIP"
 	iptables -t nat -I PREROUTING -p tcp --dport 22 -j DNAT --to-destination "$thisServerIP"
 	echo "Enter foreign server IP:"
 	read -r foreignVPSIP
